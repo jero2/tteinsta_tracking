@@ -19,3 +19,8 @@ jobs:
           INSTAGRAM_TOKEN: ${{ secrets.INSTAGRAM_TOKEN }}
           NOTION_DB_ID: ${{ secrets.NOTION_DB_ID }}
           IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}
+      - run: node youtube-collect.js
+        env:
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          YOUTUBE_API_KEY: ${{ secrets.YOUTUBE_API_KEY }}
+          NOTION_DB_ID: ${{ secrets.NOTION_DB_ID }}
